@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+  <title><%=item.title%></title>
+  <%- include head %>
+</head>
+<body>
+
+  <%- include('bar', {username: username}) %>
+  <div class="detail">
+    <div class="title"><%=item.title%></div>
+    <div class='desc'>
+      <span>作者：<%=item.username%></span>
+      <span>投稿日：<%=item.time%></span>
+    </div>
+    <div class="content"><%-item.content%></div>
+  </div>
+
+</body>
+</html>

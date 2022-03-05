@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+  <title>ログイン</title>
+  <%- include head %>
+</head>
+<body>
+
+  <div class="container">
+	<div class="login-container">
+
+            <div class="form-box">
+                <form action="/users/login" method="post">
+                    <input name="username" type="text" placeholder="ユーザ名"required>
+                    <input name="password" type="password" placeholder="パスワード"  minlength="6" maxlength="16" required>
+                    <button class="btn btn-info btn-block login" type="submit">ログイン</button>
+                </form>
+                <div>アカウントをお持ちでない場合、<a href="/regist">作成</a>できます。</div>
+
+            </div>
+        </div>
+
+</div>
+
+</body>
+</html>

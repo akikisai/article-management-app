@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>登録</title>
+  <%- include head %>
+</head>
+<body>
+
+  <div class="container">
+	   <div class="login-container">
+            <div class="form-box">
+                <form action="/users/regist" method="post">
+                  <input type="text" name="username" value="" placeholder="ユーザ名"required>
+                  <input type="password" name="password" value="" placeholder="パスワード" minlength="6" maxlength="16"required>
+                    <button class="btn btn-info btn-block login" type="submit">登録する</button>
+                </form>
+                <div>アカウントをお持ちの場合、<br><a href="/login">ログイン</a>してください。</div>
+            </div>
+      </div>
+  </div>
+
+</body>
+</html>

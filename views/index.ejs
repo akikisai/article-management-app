@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>記事管理ホーム | <%= username %></title>
+    <%- include head %>
+  </head>
+  <body>
+    <%- include('bar', {username}) %>
+
+    <div class="list">
+      <!-- ページ分け、何ページ目 -->
+      <div class="pages">
+        <% for(let i=1; i<=data.total; i++) { %>
+          <!-- ここでクリックすると今いる何ページ目かが"/"にわたり、そのページ内容を表示したい-->
+          <a class="pages_style" href="/?page=<%= i %>"><%= i %></a>
+        <% } %>
+      </div>
+
+      <div class="row">
+        <span>順番</span>
+        <span>作者</span>
+        <span>タイトル</span>
+        <span>公開日</span>
+        <span>
+          アクション
+        </span>
+
+      </div>
+
+      <!-- 記事リスト -->
+      <% data.list.map(function(item,index){ %>
+        <div class="row">
+          <span><%= index+1 %></span>
+          <span><%= item.username %></span>
+          <span><a href="/detail?id=<%=item.id%>"><%= item.title %></a></span>
+          <span><%= item.time %></span>
+          <span>
+            <% if (item.username===username) { %>
+              <a href="/write?id=<%=item.id%>&page=<%=data.curPage%>">編集</a>
+              <a href="/article/delete?id=<%=item.id%>&page=<%=data.curPage%>">削除</a>
+            <%} else {%>
+              <span class="grey">編集</span>
+              <span class="grey">削除</span>
+            <%}%>
+          </span>
+        </div>
+      <% }) %>
+
+    </div>
+
+
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>記事作成</title>
+  <%- include head %>
+
+  <script src="javascripts/tinymce_5.10.3/tinymce/js/tinymce/tinymce.min.js" referrerpolicy="origin"></script>
+
+   <script>
+     tinymce.init({
+       selector: 'textarea',
+       language: 'ja'
+     });
+   </script>
+
+</head>
+
+<body>
+
+  <%- include('bar', {username: username}) %>
+  <div class="article">
+    <form action="/article/add" method="post">
+
+      <input type="hidden" name="id" value="<%- item.id %>">
+      <input type="hidden" name="page" value="<%- item.page %>">
+      <input type="text" name="title" placeholder="タイトル" value="<%= item.title %>">
+      <textarea name="content" class="xheditor" id="mytextarea"><%- item.content %></textarea>
+      <% if (item.id) { %>
+        <input type="submit" value="編集">
+      <%} else {%>
+        <input type="submit" value="投稿">
+      <%}%>
+    </form>
+  </div>
+
+
+
+</body>
+
+</html>
