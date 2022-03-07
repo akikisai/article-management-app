@@ -22,19 +22,29 @@ Qiita記事にて、コード説明など振り返りという意味も込めて
 - Git
 - TinyMCE
 
-## 使用したパッケージ
-
-"cookie-parser": "~1.4.4",
-"debug": "~2.6.9",
-"ejs": "~2.6.1",
-"express": "~4.16.1",
-"express-session": "^1.17.2",
-"http-errors": "~1.6.3",
-"moment": "^2.29.1",
-"mongodb": "^4.4.0",
-"morgan": "~1.9.1"
-
 ## 見た目
+
+- ログイン画面
+
+<img src="https://user-images.githubusercontent.com/85460645/156983717-33b70565-3134-4778-a99c-96f0be30568c.png" width="700">
+
+- 登録画面
+
+<img src="https://user-images.githubusercontent.com/85460645/156983722-d7782809-28e1-4c2e-819d-b3c76e8a26fe.png" width="700">
+
+- 記事リスト画面
+
+<img src="https://user-images.githubusercontent.com/85460645/156983723-fc0bd06d-24bf-476a-93f2-6a2490ba359a.png" width="700">
+
+- 記事閲覧画面
+
+<img src="https://user-images.githubusercontent.com/85460645/156983726-985643f3-ff91-483e-a428-b91121497be0.png" width="700">
+
+- 記事編集&追加画面
+
+<img src="https://user-images.githubusercontent.com/85460645/156983727-8113d80d-524c-43c1-bf56-93eeb1e2a22d.png" width="700">
+
+
 
 
 
