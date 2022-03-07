@@ -40,7 +40,7 @@ Qiitaにて、コード説明など、振り返りという意味も込めて記
 
 <img src="https://user-images.githubusercontent.com/85460645/156983726-985643f3-ff91-483e-a428-b91121497be0.png" width="700">
 
-- 記事編集&追加画面
+- 記事編集&追加画面（編集時はボタンが編集に変わる）
 
 <img src="https://user-images.githubusercontent.com/85460645/156983727-8113d80d-524c-43c1-bf56-93eeb1e2a22d.png" width="700">
 
